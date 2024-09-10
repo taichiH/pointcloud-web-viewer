@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { w3cwebsocket } from 'websocket';
 import { useRecoilValue, useSetRecoilState, useRecoilState } from 'recoil';
-import { Button, Input } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import SyncIcon from '@material-ui/icons/Sync';
-import SyncDisabledIcon from '@material-ui/icons/SyncDisabled';
+import { Button, Input, Typography, Box } from '@mui/material';
+import SyncIcon from '@mui/icons-material/Sync';
+import SyncDisabledIcon from '@mui/icons-material/SyncDisabled';
+
 
 import NavBar from './components/NavBar';
 import PointCloudViewer from './components/PointCloudViewer';
@@ -46,8 +45,8 @@ const App: React.FC = () => {
 
   return (
     <>
-      <NavBar />
-      <Box m={3}>
+      {/* <NavBar /> */}
+      <Box>
         <Button variant="contained" onClick={handleGetPoints}>
           GET POINTS
         </Button>
@@ -58,7 +57,7 @@ const App: React.FC = () => {
           RECONNECT
         </Button>
       </Box>
-      <Box m={3}>
+      <Box>
         <Typography variant="h6" noWrap>
           ws://
           <Input

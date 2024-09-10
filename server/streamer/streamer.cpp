@@ -16,7 +16,8 @@
 
 #include "../utils/streamer.hpp"
 
-using PointType = pcl::PointXYZRGB;
+// using PointType = pcl::PointXYZRGB;
+using PointType = pcl::PointXYZ;
 
 namespace beast = boost::beast;
 namespace http = beast::http;

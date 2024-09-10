@@ -11,7 +11,8 @@
 #include <pcl/filters/filter.h>
 #include <pcl/filters/voxel_grid.h>
 
-using PointType = pcl::PointXYZRGB;
+// using PointType = pcl::PointXYZRGB;
+using PointType = pcl::PointXYZ;
 
 namespace beast = boost::beast;
 namespace http = beast::http;
